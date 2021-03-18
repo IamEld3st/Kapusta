@@ -1,5 +1,5 @@
 IVS - Projekt 2 - Tímová spolupráca - kalkulačka       
-==================================================        
+=========================================================================    
 Názov tímu: KAPUSTNIACI 
 
 Zoznam členov:  Tomáš Homola (xhomol28) [vedúci]
@@ -9,7 +9,7 @@ Zoznam členov:  Tomáš Homola (xhomol28) [vedúci]
 
 Názov produktu: Kapusta - THE Calculator
  
-=================================================
+=========================================================================
 
 Termíny:
     12.03.    Zoznámenie sa so zadaním a zadelenie úloh
@@ -23,7 +23,7 @@ Termíny:
     od 10.05. Obhajoby projektu
     24.05.    Odovzdanie zoznamu problémov (každý člen)
 
-=================================================================
+=========================================================================
 Pridelené úlohy jednotlivým riešiteľom
 
 GUI: Zaklad.............................xdobro23 & xszcze01
@@ -82,7 +82,7 @@ Prezentácia k obhajobe..................xhomol28 & xhrabo14
 -- vytvorenie prezentácie a následné zadelenie jednotlivých
 častí prezentácie členom tímu
 
-====================================================================
+=========================================================================
 Zvolené komunikačné kanály: Discord
 
 Z dôvodu nepriaznivej pandemickej situácie sa zvolil Discord ako hlavný 
