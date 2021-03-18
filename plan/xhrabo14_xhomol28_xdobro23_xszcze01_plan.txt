@@ -1,1 +1,98 @@
-------PLAN------
+IVS - Projekt 2 - Tímová spolupráca - kalkulačka       
+==================================================        
+Názov tímu: KAPUSTNIACI 
+
+Zoznam členov:  Tomáš Homola (xhomol28) [vedúci]
+                Alžbeta Hrabošová (xhrabo14)
+                Samuel Dobroň (xdobro23)
+                Andrzej Szczepaniak (xszcze01)
+
+Názov produktu: Kapusta - THE Calculator
+ 
+=================================================
+
+Termíny:
+    12.03.    Zoznámenie sa so zadaním a zadelenie úloh
+    18.03.    Odovzdanie plánu projektu
+    02.04.    Makefile, testy, základné operácie (+,-,/,*)
+    09.04.    Implementácia zvyšných funkcií a algoritmov
+    16.04.    Dizajn, profilling, GUI
+    23.04.    Dokumentácia, Príručka, Inštalátor/Odinštalátor
+    25.04.    Finálne úpravy detailov, mockup
+    28.04.    Odovzdanie inštalátoru, repozitáru a programu
+    od 10.05. Obhajoby projektu
+    24.05.    Odovzdanie zoznamu problémov (každý člen)
+
+=================================================================
+Pridelené úlohy jednotlivým riešiteľom
+
+GUI: Zaklad.............................xdobro23 & xszcze01
+
+GUI: Testy.........................................xdobro23
+
+GUI: Dizajn........................................xhrabo14
+
+GUI: Implementácia.................................xhomol28
+
+Makefile...........................................xszcze01
+
+MATH: funkcia násobenie............................xhomol28
+-- implementácia aritmetickej operácie *
+
+MATH: funkcia sčítanie.............................xhrabo14
+-- implementácia aritmetickej operácie +
+
+MATH: funkcia odčítanie............................xszcze01
+-- implementácia aritmetickej operácie -
+
+MATH: funkcia delenie..............................xdobro23
+-- implementácia aritmetickej operácie /
+
+MATH: funkcia sínus................................xhomol28
+-- implementácia aritmetickej operácie sin()
+
+MATH: funkcia odmocnina............................xszcze01
+-- implementácia aritmetickej operácie sqrt()
+
+MATH: funkcia mocnina..............................xdobro23
+-- implementácia aritmetickej operácie sqr()
+
+MATH: funkcia faktoriál............................xhrabo14
+-- implementácia aritmetickej operácie x! 
+
+MATH: algoritmus pre pre prednostné operácie.......xdobro23
+-- implementácia algoritmu na ošetrenie prednostných 
+operácií násobenia a delenia pred sčítaním a odčítaním
+
+MATH: algoritmus pre zátvorky......................xszcze01
+-- implementácia algoritmu pre vyhľadávanie zátvoriek a 
+následné rozdelenie zadaného výrazu na podvýrazy
+
+Dodržiavanie termínov, kontrola práce tímu.........xhomol28
+-- priebežná kontrola práce členov tímu a organizácia 
+stretnutí tímu
+
+DOC: Príručka......................................xhomol28
+-- vytvorenie uživateľského manuálu vrátane návodu ako
+kalkulačku nainštalovať a odinštalovať
+
+Inštalátor/Odinštalátor............................xszcze01
+
+Prezentácia k obhajobe..................xhomol28 & xhrabo14
+-- vytvorenie prezentácie a následné zadelenie jednotlivých
+častí prezentácie členom tímu
+
+====================================================================
+Zvolené komunikačné kanály: Discord
+
+Z dôvodu nepriaznivej pandemickej situácie sa zvolil Discord ako hlavný 
+komunikačný kanál. Aplikácia umožnuje i skupinové hovory a zdieľanie 
+obrazovky, čo je na riešenie problémov veľmi výhodné. Všetci členovia
+tímu používaju Discord každý deň a bol jednohlasne určený ako najlepšie
+prostredie na pravidelné stretnutia.
+
+=========================================================================
+Zvolený systém pre správu verzií a hosting: Github
+
+-github repozitár (https://github.com/IamEld3st/Kapusta) je 
+zdieľaný vyučujúcemu pomocou e-mailu ivs.kontrola@gmail.com
