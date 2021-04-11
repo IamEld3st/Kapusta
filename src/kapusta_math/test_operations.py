@@ -36,10 +36,11 @@ def test_sqrt():
     with pytest.raises(ValueError):
         sqrt(-4)
 
-def test_sqr():
-    assert sqr(1) == 1
-    assert sqr(2) == 4
-    assert sqr(-3) == 9
+
+def test_pow():
+    assert pwr(1, 1) == 1
+    assert pwr(2, 2) == 4
+    assert pwr(-4, -2) == 1/16
 
 def test_fac():
     assert fac(2) == 2
