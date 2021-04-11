@@ -38,8 +38,16 @@ def sqrt(x):
     """
     return math.sqrt(x)
 
-def sqr(x):
-    return 0
+
+def pwr(x, y):
+    """
+        The power of a number
+
+        Parameters:
+            x:      The base
+            y:      The exponent
+    """
+    return x**y
 
 def fac(x):
     return 0
