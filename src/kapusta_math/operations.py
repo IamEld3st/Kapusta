@@ -50,4 +50,17 @@ def pwr(x, y):
     return x**y
 
 def fac(x):
-    return 0
+    """
+    Factorial of a number
+
+    Parameters:
+        x:      Number for factorial
+    """
+    if x == 0:
+        return 1
+    if x < 0:
+        raise ValueError
+
+    return x*fac(x-1)
+
+    
