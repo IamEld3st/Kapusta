@@ -41,11 +41,11 @@ def sqrt(x):
 
 def pwr(x, y):
     """
-        The power of a number
+    The power of a number
 
-        Parameters:
-            x:      The base
-            y:      The exponent
+    Parameters:
+        x:      The base
+        y:      The exponent
     """
     return x**y
 
