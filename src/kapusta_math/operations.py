@@ -1,6 +1,13 @@
 import math
 
 def add(a, b):
+    """
+    Sum of two numbers
+
+    Parameters:
+        a:      first number
+        b:      second number
+    """
     return a + b
 
 def sub(a, b):
