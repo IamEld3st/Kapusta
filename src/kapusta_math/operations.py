@@ -1,8 +1,17 @@
+import math
+
 def add(a, b):
     return 0
 
 def sub(a, b):
-    return 0
+    """
+    Substract a number from a different number
+
+    Parameters:
+        a:      Substracted number
+        b:      Amount to substract
+    """
+    return a - b
 
 def mul(a, b):
     return 0
@@ -14,7 +23,13 @@ def sin(x):
     return 0
 
 def sqrt(x):
-    return 0
+    """
+    Square root of a number
+
+    Parameters:
+        x:      Number for sqrt
+    """
+    return math.sqrt(x)
 
 def sqr(x):
     return 0
