@@ -79,5 +79,3 @@ def fac(x):
         raise ValueError
 
     return x*fac(x-1)
-
-    
