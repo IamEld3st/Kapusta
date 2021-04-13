@@ -1,5 +1,6 @@
 import math
 
+
 def add(a, b):
     """
     Sum of two numbers
@@ -10,6 +11,7 @@ def add(a, b):
     """
     return a + b
 
+
 def sub(a, b):
     """
     Substract a number from a different number
@@ -19,6 +21,7 @@ def sub(a, b):
         b:      Amount to substract
     """
     return a - b
+
 
 def mul(a, b):
     return 0
@@ -37,8 +40,10 @@ def div(a, b) -> float:
 
     return a / b
 
+
 def sin(x):
     return 0
+
 
 def sqrt(x):
     """
@@ -59,6 +64,7 @@ def pwr(x, y):
         y:      The exponent
     """
     return x**y
+
 
 def fac(x):
     """
