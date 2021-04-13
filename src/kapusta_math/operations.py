@@ -23,8 +23,19 @@ def sub(a, b):
 def mul(a, b):
     return 0
 
-def div(a, b):
-    return 0
+
+def div(a, b) -> float:
+    """
+    Divide a number by number
+
+    Parameters:
+        a: Number to divide (dividend)
+        b: Number to divide with (divisor)
+    """
+    if b == 0:
+        raise ZeroDivisionError
+
+    return a / b
 
 def sin(x):
     return 0
