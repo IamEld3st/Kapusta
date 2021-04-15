@@ -27,7 +27,13 @@ def div(a, b):
     return 0
 
 def sin(x):
-    return 0
+    """
+    The sine of a number
+
+    Parameters:
+        x:      Number for sin (should be in radians)
+    """
+    return math.sin(x)
 
 def sqrt(x):
     """
