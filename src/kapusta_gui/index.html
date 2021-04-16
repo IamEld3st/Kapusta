@@ -1,5 +1,66 @@
-<script type="text/javascript" src="/eel.js"></script>
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator - KAPUSTA</title>   
+    <link rel="stylesheet" type="text/css" href="style.css">   
+    <script type="text/javascript" src="/eel.js"></script>
+</head>
+<body>
+    <div class="display">
+        <input id="display" type="display" placeholder="KAPUSTA">
+    </div>
+        <div class="buttons">
+            <div id="left_side">
+                <div id="first_row">
+                    <input id="button" type="submit" value="("> 
+                    <input id="button" type="submit" value=")">
+                    <input id="button" type="submit" value="sin">
+                </div>
+
+                <div id="second_row">
+                    <input id="button" type="submit" value="&#8730;">
+                    <input id="button" type="submit" value="^">
+                    <input id="button" type="submit" value="x!">
+                </div>
+
+                <div class='circle-container'>
+                    <a href='#' class='center'><img src='kapusta.png'></a>
+                    <div id="numbers">
+                        <a href='#' class='deg0'><p>2</p></a>
+                        <a href='#' class='deg36'><p>3</p></a>
+                        <a href='#' class='deg72'><p>4</p></a>
+                        <a href='#' class='deg108'><p>5</p></a>
+                        <a href='#' class='deg144'><p>6</p></a>
+                        <a href='#' class='deg180'><p>7</p></a>
+                        <a href='#' class='deg216'><p>8</p></a>
+                        <a href='#' class='deg252'><p>9</p></a>
+                        <a href='#' class='deg288'><p>0</p></a>
+                        <a href='#' class='deg324'><p>1</p></a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="right_side">
+                <div id="AC_button">
+                    <input id="button" type="submit" value="AC">
+                </div>
+                <div id="help_button">
+                    <input id="button" type="submit" value="?">
+                </div>
+                <input id="button" type="submit" value="&#43;">
+                <input id="button" type="submit" value="&#8722;">
+                <input id="button" type="submit" value="&#215;">
+                <input id="button" type="submit" value="&#247;">
+                <input id="button" type="submit" value=".">
+                <div id="equal_button">
+                    <input id="button" type="submit" value="&#61;">
+                </div>
+            </div>
+        </div>
+</body>
+
 <script>
     eel.evaluate("1+1") // this call calls the python function evaluation.evaluate()
 </script>
-

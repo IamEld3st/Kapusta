@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+body{
+    background-image: linear-gradient(to top,#83f683, #235523);
+}
+
+#display{
+    height: 54px;
+    width: 250px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 18px;
+    text-align: center;
+    line-height: .15em;
+    border-radius: 10px;
+}
+
+.buttons{
+    display: flex;
+}
+
+#button{
+    background-color: #bec2be;
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    padding: 0;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    border-radius: 8px;
+}
+
+#right_side{
+    display: flex;
+    flex-direction: column;
+    margin-left: -1.5em;
+}
+
+#right_side > #button{
+    margin-left: 0;
+}
+
+#right_side > #AC_button > #button{
+    margin-left: 0;
+    background-color: #487377;
+}
+
+#right_side > #equal_button > #button{
+    margin-left: 0;
+    background-color: #80989B;
+}
+
+#right_side > #help_button > #button{
+    margin-left: 0;
+    background-color: #80989B;
+}
+
+.circle-container {
+    position: relative;
+    width: 15em;
+    height: 15em;
+    /*padding: 2.8em;*/
+    /*2.8em = 2em*1.4 (2em = half the width of a link with img, 1.4 = sqrt(2))*/
+    border-radius: 50%;
+    /*margin: 1.75em auto 0;*/
+}
+.circle-container a {
+    display: block;
+    position: absolute;
+    background-image: linear-gradient(to top,#90E98E, #828F82);
+    top: 50%; left: 50%;
+    width: 2.5em; height: 2.5em;
+    margin: -2em;
+    border-radius: 50%;
+    text-decoration: none;
+    text-align: center;
+}  
+
+.circle-container a p{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-variant-numeric: tabular-nums;
+    padding-top: 8px;
+    color: black;
+}
+
+.circle-container .center{
+    background-image: none;    
+    width: 40%;
+    height: auto;
+}
+
+.circle-container  img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200%;
+    height: auto;
+    margin: -2em;
+}
+
+.circle-container img { display: block; width: 100%; }
+.deg0   { transform: translate(5em); } /* 12em = half the width of the wrapper */
+.deg36  { transform: rotate(36deg)  translate(5em) rotate(-36deg);  }
+.deg72  { transform: rotate(72deg)  translate(5em) rotate(-72deg) ; }
+.deg108 { transform: rotate(108deg) translate(5em) rotate(-108deg); }
+.deg144 { transform: rotate(144deg) translate(5em) rotate(-144deg); }
+.deg180 { transform: rotate(180deg) translate(5em) rotate(-180deg); }
+.deg216 { transform: rotate(216deg) translate(5em) rotate(-216deg); }
+.deg252 { transform: rotate(252deg) translate(5em) rotate(-252deg); }
+.deg288 { transform: rotate(288deg) translate(5em) rotate(-288deg); }
+.deg324 { transform: rotate(324deg) translate(5em) rotate(-324deg); }
+
