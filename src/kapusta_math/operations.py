@@ -24,7 +24,14 @@ def sub(a, b):
 
 
 def mul(a, b):
-    return 0
+    """
+    Multiplication of 2 numbers
+
+    Parameters:
+        a:      First number to multiply
+        b:      Second number to multiply
+    """
+    return a * b
 
 
 def div(a, b) -> float:
@@ -42,7 +49,13 @@ def div(a, b) -> float:
 
 
 def sin(x):
-    return 0
+    """
+    The sine of a number
+
+    Parameters:
+        x:      Number for sin (should be in radians)
+    """
+    return math.sin(x)
 
 
 def sqrt(x):
