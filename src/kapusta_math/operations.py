@@ -45,7 +45,13 @@ def div(a, b) -> float:
     return a / b
 
 def sin(x):
-    return 0
+    """
+    The sine of a number
+
+    Parameters:
+        x:      Number for sin (should be in radians)
+    """
+    return math.sin(x)
 
 def sqrt(x):
     """
