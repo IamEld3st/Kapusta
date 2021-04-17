@@ -21,7 +21,14 @@ def sub(a, b):
     return a - b
 
 def mul(a, b):
-    return 0
+    """
+    Multiplication of 2 numbers
+    
+    Parameters:
+        a:      First number to multiply
+        b:      Second number to multiply
+    """
+    return a * b
 
 
 def div(a, b) -> float:
