@@ -23,194 +23,32 @@ body{
     display: flex;
 }
 
-#left_bracket{
-    background-color: #bec2be;
-    width: 50px;
-    height: 30px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
+#left_side > #first_row > a{
     margin-left: 20px;
-    margin-bottom: 5px;
-    border-radius: 8px;
-    font-weight: bold;
-    color:black;
-    line-height: 1.8;
 }
 
-#right_bracket{
-    background-color: #bec2be;
-    width: 50px;
-    height: 30px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
+#left_side > #second_row > a{
     margin-left: 20px;
-    margin-bottom: 5px;
-    border-radius: 8px;
-    font-weight: bold;
-    color:black;
-    line-height: 1.8;
 }
 
-#sin{
+.button{
     background-color: #bec2be;
     width: 50px;
     height: 30px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    margin-left: 20px;
+   
     margin-bottom: 5px;
     border-radius: 8px;
     font-weight: bold;
     color:black;
     line-height: 1.8;
+    filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.8));
 }
 
-#sqrt{
-    background-color: #bec2be;
-    width: 50px;
-    height: 30px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin-left: 20px;
-    margin-bottom: 5px;
-    border-radius: 8px;
-    font-weight: bold;
-    color:black;
-    line-height: 1.8;
-}
-
-#sin{
-    background-color: #bec2be;
-    width: 50px;
-    height: 30px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin-left: 20px;
-    margin-bottom: 5px;
-    border-radius: 8px;
-    font-weight: bold;
-    color:black;
-    line-height: 1.8;
-}
-
-#sqrt{
-    background-color: #bec2be;
-    width: 50px;
-    height: 30px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin-left: 20px;
-    margin-bottom: 5px;
-    border-radius: 8px;
-    font-weight: bold;
-    color:black;
-    line-height: 1.8;
-}
-
-#power{
-    background-color: #bec2be;
-    width: 50px;
-    height: 30px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin-left: 20px;
-    margin-bottom: 5px;
-    border-radius: 8px;
-    font-weight: bold;
-    color:black;
-    line-height: 1.8;
-}
-
-#fac{
-    background-color: #bec2be;
-    width: 50px;
-    height: 30px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin-left: 20px;
-    margin-bottom: 5px;
-    border-radius: 8px;
-    font-weight: bold;
-    color:black;
-    line-height: 1.8;
-}
-
-#sum{
-    background-color: #bec2be;
-    width: 50px;
-    height: 30px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin-bottom: 5px;
-    border-radius: 8px;
-    font-weight: bold;
-    color:black;
-    line-height: 1.8;
-}
-
-#sub{
-    background-color: #bec2be;
-    width: 50px;
-    height: 30px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin-bottom: 5px;
-    border-radius: 8px;
-    font-weight: bold;
-    color:black;
-    line-height: 1.8;
-}
-
-#mul{
-    background-color: #bec2be;
-    width: 50px;
-    height: 30px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin-bottom: 5px;
-    border-radius: 8px;
-    color:black;
-    font-weight: bold;
-    line-height: 1.8;
-}
-
-#div{
-    background-color: #bec2be;
-    width: 50px;
-    height: 30px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin-bottom: 5px;
-    border-radius: 8px;
-    font-weight: bold;
-    color:black;
-    line-height: 1.8;
-}
-
-#dot{
-    background-color: #bec2be;
-    width: 50px;
-    height: 30px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin-bottom: 5px;
-    border-radius: 8px;
-    font-weight: bold;
-    color:black;
-    line-height: 1.8;
+.button:hover{
+    filter:invert() drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.8));
 }
 
 #ac{
@@ -227,6 +65,11 @@ body{
     margin-left: 0;
     background-color: #487377;
     line-height: 1.8;
+    filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.8));
+}
+
+#ac:hover{
+    filter:invert() drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.8));
 }
 
 #help{
@@ -243,6 +86,11 @@ body{
     margin-left: 0;
     background-color: #80989B;
     line-height: 1.8;
+    filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.8));
+}
+
+#help:hover{
+    filter:invert() drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.8));
 }
 
 #equal{
@@ -259,6 +107,11 @@ body{
     margin-left: 0;
     background-color: #80989B;
     line-height: 1.8;
+    filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.8));
+}
+
+#equal:hover{
+    filter:invert() drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.8));
 }
 
 #right_side{
@@ -269,6 +122,14 @@ body{
 #right_side > #AC_button > #ac{
     margin-left: 0;
     background-color: #487377;
+}
+
+#numbers > a{
+    filter:drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.8));
+}
+
+#numbers > a:hover{
+    filter:invert() drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.8));
 }
 
 .circle-container {
