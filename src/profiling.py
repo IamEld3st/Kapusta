@@ -1,6 +1,12 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
+"""@package docstring
+
+Script used to calculate standard deviation using our math library.
+
+"""
+
 import sys
 from kapusta_math.operations import *
 

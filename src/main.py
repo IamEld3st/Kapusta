@@ -1,3 +1,9 @@
+"""@package docstring
+
+Entry point of our calculator.
+
+"""
+
 import eel
 from kapusta_math.evaluation import evaluate
 
