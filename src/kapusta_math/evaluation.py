@@ -35,7 +35,7 @@ def evaluate(eval_str):
     # operations sorted by priority, ("operator", function, side_of_values)
     # regex special characters have to be escaped
     operations = [
-        [(r"\^", pwr, BOTH_SIDES), (r"\!", fac, LEFT_SIDE), (r"√", sqrt, BOTH_SIDES), (r"sin", sin, RIGHT_SIDE)],
+        [(r"\^", pwr, BOTH_SIDES), (r"\!", fac, LEFT_SIDE), (r"√", root, BOTH_SIDES), (r"sin", sin, RIGHT_SIDE)],
         [(r"\*", mul, BOTH_SIDES), (r"\/", div, BOTH_SIDES)],
         [(r"\+", add, BOTH_SIDES), (r"\-", sub, BOTH_SIDES)]]
 
