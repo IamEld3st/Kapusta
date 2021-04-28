@@ -1,5 +1,6 @@
 import math
 
+
 def add(a, b):
     """
     Sum of two numbers
@@ -9,6 +10,7 @@ def add(a, b):
         b:      second number
     """
     return a + b
+
 
 def sub(a, b):
     """
@@ -20,14 +22,41 @@ def sub(a, b):
     """
     return a - b
 
-def mul(a, b):
-    return 0
 
-def div(a, b):
-    return 0
+def mul(a, b):
+    """
+    Multiplication of 2 numbers
+
+    Parameters:
+        a:      First number to multiply
+        b:      Second number to multiply
+    """
+    return a * b
+
+
+def div(a, b) -> float:
+    """
+    Divide a number by number
+
+    Parameters:
+        a: Number to divide (dividend)
+        b: Number to divide with (divisor)
+    """
+    if b == 0:
+        raise ZeroDivisionError
+
+    return a / b
+
 
 def sin(x):
-    return 0
+    """
+    The sine of a number
+
+    Parameters:
+        x:      Number for sin (should be in radians)
+    """
+    return math.sin(x)
+
 
 def sqrt(x):
     """
@@ -49,6 +78,7 @@ def pwr(x, y):
     """
     return x**y
 
+
 def fac(x):
     """
     Factorial of a number
@@ -62,5 +92,3 @@ def fac(x):
         raise ValueError
 
     return x*fac(x-1)
-
-    

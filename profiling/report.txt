@@ -1,0 +1,21 @@
+# Profiling of Kapusta's math library
+
+## Assignment
+Create a profiling program using your math library to calculate
+the standard deviation of provided numbers.
+The input is provided via `stdin`, numbers are divided by
+whitespace character.
+
+## Results of profiling
+Graphs are located in the `graphs` directory, profiler outputs are in
+the `profiler_outputs` directory.
+We found out, that program calls lots of Python's built-in functions,
+these functions are well optimized, so there is no reason to optimize it.
+
+Almost 18% of processing time is spent in the `add()` function, we definitely
+should optimize it.
+In the function `pwr()` is 9% of time spend, it is also a good candidate
+for optimization.
+
+The rest of the time is spent in lots of other functions.
+

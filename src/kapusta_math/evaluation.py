@@ -1,3 +1,4 @@
+import eel
 from kapusta_math.operations import *
 import re
 
@@ -13,7 +14,7 @@ BOTH_SIDES = fr"{NUMBER}...{NUMBER}"
 LEFT_SIDE = fr"{NUMBER}..."
 RIGHT_SIDE = fr"...{NUMBER}"
 
-
+@eel.expose
 def evaluate(eval_str):
     """
         Evaluates provided string.

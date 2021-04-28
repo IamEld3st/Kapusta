@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+body{
+    background-image: linear-gradient(to top,#83f683, #235523);
+}
+
+#display{
+    height: 54px;
+    width: 270px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 18px;
+    text-align: center;
+    line-height: .15em;
+    border-radius: 10px;
+}
+
+.buttons{
+    display: flex;
+}
+
+#left_side > #first_row > a{
+    margin-left: 20px;
+}
+
+#left_side > #second_row > a{
+    margin-left: 20px;
+}
+
+.button{
+    background-color: #bec2be;
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+   
+    margin-bottom: 5px;
+    border-radius: 8px;
+    font-weight: bold;
+    color:black;
+    line-height: 1.8;
+    filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.8));
+}
+
+.button:hover{
+    filter:invert() drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.8));
+}
+
+#ac{
+    background-color: #bec2be;
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 5px;
+    border-radius: 8px;
+    font-weight: bold;
+    color:black;
+    margin-left: 0;
+    background-color: #487377;
+    line-height: 1.8;
+    filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.8));
+}
+
+#ac:hover{
+    filter:invert() drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.8));
+}
+
+#help{
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    border-radius: 8px;
+    font-weight: bold;
+    color:black;
+    margin-left: 0;
+    background-color: #80989B;
+    line-height: 1.8;
+    filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.8));
+}
+
+#help:hover{
+    filter:invert() drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.8));
+}
+
+#equal{
+    background-color: #bec2be;
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 5px;
+    border-radius: 8px;
+    font-weight: bold;
+    color:black;
+    margin-left: 0;
+    background-color: #80989B;
+    line-height: 1.8;
+    filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.8));
+}
+
+#equal:hover{
+    filter:invert() drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.8));
+}
+
+#right_side{
+    display: flex;
+    flex-direction: column;
+}
+
+#right_side > #AC_button > #ac{
+    margin-left: 0;
+    background-color: #487377;
+}
+
+#numbers > a{
+    filter:drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.8));
+}
+
+#numbers > a:hover{
+    filter:invert() drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.8));
+}
+
+.circle-container {
+    position: relative;
+    width: 15em;
+    height: 15em;
+    border-radius: 50%;
+}
+
+.circle-container a {
+    display: block;
+    position: absolute;
+    background-image: linear-gradient(to top,#90E98E, #828F82);
+    top: 50%; left: 50%;
+    width: 2.5em; height: 2.5em;
+    margin: -2em;
+    border-radius: 50%;
+    text-decoration: none;
+    text-align: center;
+}  
+
+.circle-container a p{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-variant-numeric: tabular-nums;
+    padding-top: 8px;
+    color: black;
+}
+
+.circle-container .center{
+    background-image: none;    
+    width: 40%;
+    height: auto;
+}
+
+.circle-container  img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+    margin: -2em;
+}
+
+.circle-container img { display: block; width: 100%; }
+.deg0   { transform: translate(5em); } /* 12em = half the width of the wrapper */
+.deg36  { transform: rotate(36deg)  translate(5em) rotate(-36deg);  }
+.deg72  { transform: rotate(72deg)  translate(5em) rotate(-72deg) ; }
+.deg108 { transform: rotate(108deg) translate(5em) rotate(-108deg); }
+.deg144 { transform: rotate(144deg) translate(5em) rotate(-144deg); }
+.deg180 { transform: rotate(180deg) translate(5em) rotate(-180deg); }
+.deg216 { transform: rotate(216deg) translate(5em) rotate(-216deg); }
+.deg252 { transform: rotate(252deg) translate(5em) rotate(-252deg); }
+.deg288 { transform: rotate(288deg) translate(5em) rotate(-288deg); }
+.deg324 { transform: rotate(324deg) translate(5em) rotate(-324deg); }
