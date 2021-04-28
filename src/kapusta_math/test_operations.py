@@ -35,12 +35,13 @@ def test_sin():
     assert sin(70) > 0.9
 
 
-def test_sqrt():
-    assert sqrt(4) == 2
-    assert sqrt(16) == 4
-    assert sqrt(0) == 0
+def test_root():
+    assert root(4) == 2
+    assert root(16) == 4
+    assert root(0) == 0
     with pytest.raises(ValueError):
-        sqrt(-4)
+        root(-4)
+    assert root(27, 3) == 3
 
 
 def test_pow():

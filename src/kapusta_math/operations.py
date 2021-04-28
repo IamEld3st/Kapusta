@@ -58,14 +58,18 @@ def sin(x):
     return math.sin(x)
 
 
-def sqrt(x):
+def root(x, n=2):
     """
-    Square root of a number
+    Root-n of a number
 
     Parameters:
         x:      Number for sqrt
+        n:      Nth root
     """
-    return math.sqrt(x)
+    if x < 0 or n < 1:
+        raise ValueError
+
+    return x**(1/float(n))
 
 
 def pwr(x, y):
