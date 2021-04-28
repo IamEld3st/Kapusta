@@ -5,6 +5,12 @@
 
 body{
     background-image: linear-gradient(to top,#83f683, #235523);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 #display{
