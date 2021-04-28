@@ -1,3 +1,11 @@
+"""@package operations
+
+Module for math operations.
+
+Each function of this module is called by evaluation.evaluation().
+
+"""
+
 import math
 
 

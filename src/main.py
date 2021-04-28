@@ -1,3 +1,8 @@
+"""@package docstring
+
+Entry point of our calculator.
+
+"""
 import os
 import sys
 import platform

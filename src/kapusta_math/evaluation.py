@@ -1,3 +1,13 @@
+"""@package evaluation
+
+Module for evaluate() function.
+
+Module used for evaluating provided expression.
+Defined global variables (BOTH_SIDES, LEFT_SIDE, RIGHT_SIDE) are used to determine, where operands are.
+
+"""
+
+
 import eel
 from kapusta_math.operations import *
 import re
@@ -13,6 +23,7 @@ NUMBER = r"([-]?(?:[0-9]*[.,])?[0-9]+)"
 BOTH_SIDES = fr"{NUMBER}...{NUMBER}"
 LEFT_SIDE = fr"{NUMBER}..."
 RIGHT_SIDE = fr"...{NUMBER}"
+
 
 @eel.expose
 def evaluate(eval_str):

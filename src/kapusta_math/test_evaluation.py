@@ -1,8 +1,17 @@
+"""@package test_evaluation
+
+Module for tests of evaluation module.
+
+"""
+
 import pytest
 from kapusta_math.evaluation import evaluate
 
 
 def test_basic_eval():
+    """
+       Tests for evaluate() function
+    """
     assert evaluate("2+2") == 4
     assert evaluate("2*3") == 6
     assert evaluate("1+2*3") == 7
