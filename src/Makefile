@@ -5,13 +5,13 @@ all:
 
 pack: clean doc
 	mkdir ../../$(AUTHORS) ../../$(AUTHORS)/doc ../../$(AUTHORS)/install
-	cp -r ../docs/html ../../$(AUTHORS)/doc/
+	cp -rf ../docs/html ../../$(AUTHORS)/doc/
 	cp ../docs/documentation.pdf ../../$(AUTHORS)/doc/
-	cp -r ../../Kapusta ../../$(AUTHORS)/repo
+	cp -rf ../../Kapusta ../../$(AUTHORS)/repo
 
 	cp -a ../install/. ../../$(AUTHORS)/install/
-	rm -r ../../$(AUTHORS)/repo/venv
-	rm -r ../../$(AUTHORS)/repo/.idea
+	rm -rf ../../$(AUTHORS)/repo/venv
+	rm -rf ../../$(AUTHORS)/repo/.idea
 	cd ../../ && zip -r $(AUTHORS).zip $(AUTHORS)
 
 
