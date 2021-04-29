@@ -23,6 +23,7 @@ NUMBER = r"([-]?(?:[0-9]*[.,])?[0-9]+)"
 BOTH_SIDES = fr"{NUMBER}...{NUMBER}"
 LEFT_SIDE = fr"{NUMBER}..."
 RIGHT_SIDE = fr"...{NUMBER}"
+ROOT_OPERATION = fr"{NUMBER}√{NUMBER}|√{NUMBER}"
 
 
 @eel.expose
@@ -46,7 +47,7 @@ def evaluate(eval_str):
     # operations sorted by priority, ("operator", function, side_of_values)
     # regex special characters have to be escaped
     operations = [
-        [(r"\^", pwr, BOTH_SIDES), (r"\!", fac, LEFT_SIDE), (r"√", root, BOTH_SIDES), (r"sin", sin, RIGHT_SIDE)],
+        [(r"\^", pwr, BOTH_SIDES), (r"\!", fac, LEFT_SIDE), (r"√", root, ROOT_OPERATION), (r"sin", sin, RIGHT_SIDE)],
         [(r"\*", mul, BOTH_SIDES), (r"\/", div, BOTH_SIDES)],
         [(r"\+", add, BOTH_SIDES), (r"\-", sub, BOTH_SIDES)]]
 
