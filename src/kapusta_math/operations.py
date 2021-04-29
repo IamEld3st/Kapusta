@@ -66,7 +66,11 @@ def sin(x):
     return math.sin(x)
 
 
-def root(x, n=2):
+def root(n, x=-1):
+    if x == -1:
+        x = 2
+        n, x = x, n
+
     """
     Root-n of a number
 
