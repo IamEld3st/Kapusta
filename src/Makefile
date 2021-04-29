@@ -9,11 +9,11 @@ pack: clean doc
 	cp ../docs/documentation.pdf ../../$(AUTHORS)/doc/
 	cp -r ../../Kapusta ../../$(AUTHORS)/repo
 
+	cp -a ../install/. ../../$(AUTHORS)/install/
 	rm -r ../../$(AUTHORS)/repo/venv
 	rm -r ../../$(AUTHORS)/repo/.idea
 	cd ../../ && zip -r $(AUTHORS).zip $(AUTHORS)
 
-	echo "TODO: installers"
 
 clean:
 	rm -rf .pytest_cache ../docs/html ../../$(AUTHORS) ../../$(AUTHORS).zip
@@ -23,7 +23,6 @@ test:
 
 doc:
 	doxygen ../docs/doxygen.conf
-	echo "TODO: user manual"
 
 pip_install:
 	pip3 install -r ../requirements.txt
