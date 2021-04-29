@@ -19,4 +19,4 @@ if __name__ == '__main__':
         else:
             electron_folder = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'chromium/chrome.exe')
         eel.browsers.set_path('chrome', electron_folder)
-    eel.start("index.html", mode="chrome", size=(325,425))
+    eel.start("index.html", mode="chrome", size=(320,400))

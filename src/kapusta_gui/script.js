@@ -15,12 +15,17 @@ function clearField() {
     textField.value = "";
 }
 
+function deleteLast() {
+    var textField = document.getElementById("display");
+    textField.value = textField.value.slice(0, -1);
+}
+
 function writeChar(typ) {
     var textField = document.getElementById("display");
     textField.value += typ;
 }
 
-document.onkeypress = function (e) {
+document.onkeydown = function (e) {
     e = e || window.event;
     if (document.activeElement.id == "display") {
         return;
@@ -54,6 +59,18 @@ document.onkeypress = function (e) {
         case ".":
         case ",":
             writeChar('.');
+            break;
+
+        case "Delete":
+            clearField();
+            break;
+        
+        case "Backspace":
+            deleteLast();
+            break;
+
+        case "F2":
+            window.open("docs.pdf");
             break;
     
         default:
