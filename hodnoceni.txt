@@ -1,0 +1,4 @@
+xhomol28 95 (GUI, docs)
+xhrabo14 95 (mockup, docs)
+xszcze01 105 (tests, instalátor)
+xdobro23 105 (profiling, math_evaluation)
