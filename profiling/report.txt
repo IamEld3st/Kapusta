@@ -6,10 +6,34 @@ the standard deviation of provided numbers.
 The input is provided via `stdin`, numbers are divided by
 whitespace character.
 
+Standard deviation formula:
+                       N
+s = √((1 / (N - 1)) * (Σx_i^2 - N * x^2))
+                      i=1
+
+## Used hardware
+CPU: AMD Ryzen 7 4700U @ 2.0GHz x8
+Memory: 16GB @ 3.2GHz
+
+## Used software
+OS: Fedora 33 (kernel: 5.12.8-300.fc34.x86_64)
+Profiler: Python (3.9.5) built-in [cProfile](https://docs.python.org/3/library/profile.html#module-cProfile)
+Analyzer: PyCharm Professional 2021.1.1 (Build #PY-211.7142.13)
+
+## Input data
+Random generated 10, 100 and 1000 numbers from interval <0, 1000000>.
+
+## Profiling
+For profiling we used Python built-in cProfiler, it could be executed from command-line:
+`python -m cProfile -o profiling_1000_numbers.pstats profiling.py < 1000_input_numbers.txt`
+
+cProfile outputs (`profiler_outputs` directory) were analyzed via
+[PyCharm profiling analyzer](https://www.jetbrains.com/help/pycharm/profiler.html).
+
 ## Results of profiling
-Graphs are located in the `graphs` directory, profiler outputs are in
-the `profiler_outputs` directory.
-We found out, that program calls lots of Python's built-in functions,
+Graphs are located in the `graphs` directory.
+
+We found out, that program calls lots of Python's built-in functions.
 these functions are well optimized, so there is no reason to optimize it.
 
 Almost 18% of processing time is spent in the `add()` function, we definitely
@@ -17,5 +41,4 @@ should optimize it.
 In the function `pwr()` is 9% of time spend, it is also a good candidate
 for optimization.
 
-The rest of the time is spent in lots of other functions.
-
+The rest of the time is spent in lots of other functions and initialization of the Python environment.

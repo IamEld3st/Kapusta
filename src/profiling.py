@@ -32,7 +32,7 @@ def deviation(numbers: list[float]) -> float:
 
     to_sqrt = mul(div(1, sub(no_of_numbers, 1)), sub(sum_xx_pwr, mul(no_of_numbers, pwr(xx, 2))))
 
-    s = sqrt(to_sqrt)
+    s = root(to_sqrt)
     return s
 
 
